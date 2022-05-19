@@ -24,7 +24,7 @@ export default function App() {
     setTodos(JSON.parse(loadedTodos));
   };
   const addTodo = async () => {
-    const newTodo = Object.assign({}, todos, { [Date.now()]: { text, working } });
+    const newTodo = Object.assign({}, { [Date.now()]: { text, working } }, todos);
     setTodos(newTodo);
     await saveTodos(newTodo);
     setText("");
@@ -43,6 +43,8 @@ export default function App() {
       },
     ]);
   };
+  const finishTodo = () => {};
+
   useEffect(() => {
     loadTodos();
   }, []);
@@ -63,9 +65,14 @@ export default function App() {
           working === todos[key].working ? (
             <View key={key} style={styles.todo}>
               <Text style={styles.todoText}>{todos[key].text}</Text>
-              <TouchableOpacity onPress={() => deleteTodo(key)}>
-                <MaterialIcons name="delete" size={24} color="white" />
-              </TouchableOpacity>
+              <View style={styles.todoBtnContainer}>
+                <TouchableOpacity onPress={() => finishTodo(key)}>
+                  <MaterialIcons name="check-circle" size={24} color="white" />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => deleteTodo(key)}>
+                  <MaterialIcons name="delete" size={24} color="white" />
+                </TouchableOpacity>
+              </View>
             </View>
           ) : null
         )}
@@ -112,5 +119,10 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 16,
     fontWeight: "500",
+  },
+  todoBtnContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
