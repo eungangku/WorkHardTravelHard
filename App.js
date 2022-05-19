@@ -76,7 +76,7 @@ export default function App() {
         {Object.keys(todos).map((key) =>
           working === todos[key].working ? (
             <View key={key} style={styles.todo}>
-              <Text style={{ ...styles.todoText, textDecorationLine: todos[key].finish ? "line-through" : null }}>{todos[key].text}</Text>
+              <Text style={{ ...styles.todoText, textDecorationLine: todos[key].finish ? "line-through" : null, color: todos[key].finish ? "#ADADAD" : "white" }}>{todos[key].text}</Text>
               <View style={styles.todoBtnContainer}>
                 <TouchableOpacity onPress={() => finishTodo(key)}>
                   <MaterialIcons name="check-circle" size={24} color="white" />
