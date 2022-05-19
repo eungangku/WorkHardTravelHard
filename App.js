@@ -24,7 +24,7 @@ export default function App() {
     setTodos(JSON.parse(loadedTodos));
   };
   const addTodo = async () => {
-    const newTodo = Object.assign({}, { [Date.now()]: { text, working } }, todos);
+    const newTodo = Object.assign({}, { [Date.now()]: { text, working, finish: false } }, todos);
     setTodos(newTodo);
     await saveTodos(newTodo);
     setText("");
@@ -43,7 +43,19 @@ export default function App() {
       },
     ]);
   };
-  const finishTodo = () => {};
+  const finishTodo = (key) => {
+    if (todos[key].finish === true) {
+      const newTodo = { ...todos };
+      newTodo[key].finish = false;
+      setTodos(newTodo);
+      saveTodos(newTodo);
+    } else {
+      const newTodo = { ...todos };
+      newTodo[key].finish = true;
+      setTodos(newTodo);
+      saveTodos(newTodo);
+    }
+  };
 
   useEffect(() => {
     loadTodos();
@@ -64,7 +76,7 @@ export default function App() {
         {Object.keys(todos).map((key) =>
           working === todos[key].working ? (
             <View key={key} style={styles.todo}>
-              <Text style={styles.todoText}>{todos[key].text}</Text>
+              <Text style={{ ...styles.todoText, textDecorationLine: todos[key].finish ? "line-through" : null }}>{todos[key].text}</Text>
               <View style={styles.todoBtnContainer}>
                 <TouchableOpacity onPress={() => finishTodo(key)}>
                   <MaterialIcons name="check-circle" size={24} color="white" />
