@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { MaterialIcons } from "@expo/vector-icons";
 import { theme } from "./colors";
+import { getTodosFromSpreadsheet, saveTodosFromSpreadsheet } from "./spreadsheet";
 
 const STORAGE_KEY = "@todos";
 
@@ -15,13 +16,18 @@ export default function App() {
   const travel = () => setWorking(false);
   const onChangeText = (event) => setText(event);
   const saveTodos = async (newTodo) => {
-    const s = JSON.stringify(newTodo);
-    await AsyncStorage.setItem(STORAGE_KEY, s);
+    // const s = JSON.stringify(newTodo);
+    // await AsyncStorage.setItem(STORAGE_KEY, s);
+    saveTodosFromSpreadsheet(newTodo);
   };
   const loadTodos = async () => {
-    const loadedTodos = await AsyncStorage.getItem(STORAGE_KEY);
+    // const loadedTodos = await AsyncStorage.getItem(STORAGE_KEY);
+    // if (loadedTodos) {
+    //   setTodos(JSON.parse(loadedTodos));
+    // }
+    const loadedTodos = await getTodosFromSpreadsheet();
     if (loadedTodos) {
-      setTodos(JSON.parse(loadedTodos));
+      setTodos(loadedTodos);
     }
   };
   const addTodo = async (item) => {
@@ -97,9 +103,7 @@ export default function App() {
                 </TouchableOpacity>
               </View>
             </View>
-          ) : (
-            <View></View>
-          )
+          ) : null
         )}
       </ScrollView>
       <StatusBar style="light" />
