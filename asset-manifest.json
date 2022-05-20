@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/WorkHardTravelHard/static/js/app.b30ccf2d.chunk.js",
-    "app.js.map": "/WorkHardTravelHard/static/js/app.b30ccf2d.chunk.js.map",
+    "app.js": "/WorkHardTravelHard/static/js/app.b80e68af.chunk.js",
+    "app.js.map": "/WorkHardTravelHard/static/js/app.b80e68af.chunk.js.map",
     "runtime~app.js": "/WorkHardTravelHard/static/js/runtime~app.0046d3f1.js",
     "runtime~app.js.map": "/WorkHardTravelHard/static/js/runtime~app.0046d3f1.js.map",
-    "static/js/2.37fcfbde.chunk.js": "/WorkHardTravelHard/static/js/2.37fcfbde.chunk.js",
-    "static/js/2.37fcfbde.chunk.js.map": "/WorkHardTravelHard/static/js/2.37fcfbde.chunk.js.map",
+    "static/js/2.d2f62a68.chunk.js": "/WorkHardTravelHard/static/js/2.d2f62a68.chunk.js",
+    "static/js/2.d2f62a68.chunk.js.map": "/WorkHardTravelHard/static/js/2.d2f62a68.chunk.js.map",
     "fonts/AntDesign.ttf": "/WorkHardTravelHard/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/WorkHardTravelHard/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/WorkHardTravelHard/./fonts/Feather.ttf",
@@ -24,11 +24,11 @@
     "index.html": "/WorkHardTravelHard/index.html",
     "manifest.json": "/WorkHardTravelHard/manifest.json",
     "serve.json": "/WorkHardTravelHard/serve.json",
-    "static/js/2.37fcfbde.chunk.js.LICENSE.txt": "/WorkHardTravelHard/static/js/2.37fcfbde.chunk.js.LICENSE.txt"
+    "static/js/2.d2f62a68.chunk.js.LICENSE.txt": "/WorkHardTravelHard/static/js/2.d2f62a68.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.0046d3f1.js",
-    "static/js/2.37fcfbde.chunk.js",
-    "static/js/app.b30ccf2d.chunk.js"
+    "static/js/2.d2f62a68.chunk.js",
+    "static/js/app.b80e68af.chunk.js"
   ]
 }
