@@ -1,0 +1,34 @@
+{
+  "files": {
+    "app.js": "/WorkHardTravelHard/static/js/app.b30ccf2d.chunk.js",
+    "app.js.map": "/WorkHardTravelHard/static/js/app.b30ccf2d.chunk.js.map",
+    "runtime~app.js": "/WorkHardTravelHard/static/js/runtime~app.0046d3f1.js",
+    "runtime~app.js.map": "/WorkHardTravelHard/static/js/runtime~app.0046d3f1.js.map",
+    "static/js/2.37fcfbde.chunk.js": "/WorkHardTravelHard/static/js/2.37fcfbde.chunk.js",
+    "static/js/2.37fcfbde.chunk.js.map": "/WorkHardTravelHard/static/js/2.37fcfbde.chunk.js.map",
+    "fonts/AntDesign.ttf": "/WorkHardTravelHard/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "/WorkHardTravelHard/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "/WorkHardTravelHard/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "/WorkHardTravelHard/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "/WorkHardTravelHard/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "/WorkHardTravelHard/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "/WorkHardTravelHard/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "/WorkHardTravelHard/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "/WorkHardTravelHard/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/WorkHardTravelHard/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "/WorkHardTravelHard/./fonts/MaterialIcons.ttf",
+    "fonts/SimpleLineIcons.ttf": "/WorkHardTravelHard/./fonts/SimpleLineIcons.ttf",
+    "favicon-16.png": "/WorkHardTravelHard/favicon-16.png",
+    "favicon-32.png": "/WorkHardTravelHard/favicon-32.png",
+    "favicon.ico": "/WorkHardTravelHard/favicon.ico",
+    "index.html": "/WorkHardTravelHard/index.html",
+    "manifest.json": "/WorkHardTravelHard/manifest.json",
+    "serve.json": "/WorkHardTravelHard/serve.json",
+    "static/js/2.37fcfbde.chunk.js.LICENSE.txt": "/WorkHardTravelHard/static/js/2.37fcfbde.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.0046d3f1.js",
+    "static/js/2.37fcfbde.chunk.js",
+    "static/js/app.b30ccf2d.chunk.js"
+  ]
+}
